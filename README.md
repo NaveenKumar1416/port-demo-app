@@ -1,14 +1,15 @@
-# Port Demo Application – Docker & CI Pipeline
+**Port Demo Application – Docker & CI Pipeline**
 
-## Project Overview
 
-This project demonstrates how an application runs inside a Docker container, how ports are mapped between the host and container, and how a CI pipeline builds and pushes the Docker image automatically using GitHub Actions.
 
-The main focus of this project is to clearly understand and explain Docker port mapping and Docker-based CI workflows.
+**Project Overview**
 
----
+- This project demonstrates how an application runs inside a Docker container, how ports are mapped between the host and container, and how a CI pipeline builds and pushes the Docker image automatically using GitHub Actions.
 
-## Technologies Used
+- The main focus of this project is to clearly understand and explain Docker port mapping and Docker-based CI workflows.
+
+
+**Technologies Used**
 
 - Python (Flask)
 - Docker
@@ -16,9 +17,8 @@ The main focus of this project is to clearly understand and explain Docker port 
 - GitHub Actions
 - Docker Hub
 
----
 
-## Application Description
+**Application Description**
 
 - This is a simple Flask application.
 - It starts an HTTP server.
@@ -26,20 +26,18 @@ The main focus of this project is to clearly understand and explain Docker port 
 - The application runs inside a Docker container.
 - The listening port is read from an environment variable.
 
----
 
-## Ports Explanation (Important)
+**Ports Explanation (Important)**
 
 - Application Port (inside container): **8000**
 - Host Port: **8081**
 
-### Why These Ports Are Used
+**Why These Ports Are Used**
 
 - The Flask app listens on port **8000** inside the container.
 - Docker maps host port **8081** to container port **8000**.
 - Users access the application using `http://localhost:8081`.
 
----
 
 ## Architecture Diagram
 
