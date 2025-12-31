@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    image: naveen1419/port-demo-app:latest
+    container_name: port-demo-container
+    environment:
+      - APP_PORT=8000
+    ports:
+      - "8081:8000"
+
